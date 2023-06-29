@@ -59,7 +59,7 @@ function createBlogPost(imageUrl, titleStr, paragraphStr) {
     return container;
 }
 function loadPosts() {
-    var container = document.getElementsByTagName('main')[0];
+    var container = document.getElementById("posts");
     for (var i = 0; i < posts.length; i++) {
         var post = posts[i];
         var postElement = createBlogPost(post.getImageUrl(), post.getTitle(), post.getBody());

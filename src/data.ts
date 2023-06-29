@@ -75,7 +75,7 @@ function createBlogPost(imageUrl: string, titleStr: string, paragraphStr: string
 }
     
 function loadPosts(){
-    const container = document.getElementsByTagName('main')[0];
+    const container = document.getElementById("posts")!;
 
     for (let i = 0; i < posts.length; i++){
         const post = posts[i];
