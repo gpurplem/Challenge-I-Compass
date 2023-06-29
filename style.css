@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 15px 79px;
+    align-items: flex-start;
+    background: var(--primary, #32325D);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+header li {
+    list-style-type: none;
+}
+
+header ul {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.nav-text {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.nav-logo {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
