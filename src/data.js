@@ -32,6 +32,7 @@ function createBlogPost(imageUrl, titleStr, paragraphStr) {
     container.classList.add("post-container");
     var header = document.createElement("div");
     header.classList.add("post-header");
+    header.onclick = loadCommentPage;
     var image = document.createElement("img");
     image.classList.add("post-image");
     image.src = "./assets/" + imageUrl;
@@ -46,12 +47,14 @@ function createBlogPost(imageUrl, titleStr, paragraphStr) {
     paragraph.textContent = paragraphStr;
     body.appendChild(title);
     body.appendChild(paragraph);
+    body.onclick = loadCommentPage;
     var footer = document.createElement("div");
     footer.classList.add("post-footer");
     var link = document.createElement("a");
     link.classList.add("post-link");
     link.innerText = "Expand...";
     link.href = "#";
+    link.onclick = loadCommentPage;
     footer.appendChild(link);
     container.appendChild(header);
     container.appendChild(body);
@@ -67,3 +70,7 @@ function loadPosts() {
     }
 }
 loadPosts();
+function loadCommentPage() {
+    console.log("clicked");
+    return null;
+}

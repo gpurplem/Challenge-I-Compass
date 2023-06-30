@@ -65,6 +65,7 @@ header ul {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .post-title {
@@ -75,6 +76,7 @@ header ul {
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
 .post-paragraph {
@@ -85,6 +87,7 @@ header ul {
     font-weight: 300;
     line-height: 20px;
     letter-spacing: 1.3px;
+    cursor: pointer;
 }
 
 .post-link {
@@ -95,12 +98,14 @@ header ul {
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 1.3px;
+    cursor: pointer;
 }
 
 .post-body {
     padding: 10px 10px 0;
     height: 100px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .post-footer {
