@@ -51,7 +51,7 @@ header ul {
     row-gap: 50px;
 }
 
-.post-container {
+.posts-page-post-container {
     width: 300px;
     height: 346px;
     display: flex;
@@ -61,13 +61,14 @@ header ul {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.post-image {
+.posts-page-post-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    cursor: pointer;
 }
 
-.post-title {
+.posts-page-post-title {
     color: #3A4F9A;
     font-size: 20px;
     font-family: sans-serif;
@@ -75,9 +76,10 @@ header ul {
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 
-.post-paragraph {
+.posts-page-post-paragraph {
     color: #575757;
     font-size: 13px;
     font-family: Inter;
@@ -85,6 +87,7 @@ header ul {
     font-weight: 300;
     line-height: 20px;
     letter-spacing: 1.3px;
+    cursor: pointer;
 }
 
 .post-link {
@@ -95,12 +98,14 @@ header ul {
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 1.3px;
+    cursor: pointer;
 }
 
-.post-body {
+.posts-page-post-body {
     padding: 10px 10px 0;
     height: 100px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .post-footer {
@@ -140,4 +145,53 @@ header ul {
     padding: 80px 0px 11px 125px;
     text-decoration: underline;
     text-underline-offset: 16px;
+}
+
+.full-post-page-post-container {
+    width: 771px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#full-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 23px;
+}
+
+.full-post-page-post-image {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.full-post-page-post-title {
+    color: #3A4F9A;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.full-post-page-post-paragraph {
+    color: #575757;
+    font-size: 13px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+}
+
+.full-post-page-post-body {
+    padding: 40px 70px 30px;
 }
