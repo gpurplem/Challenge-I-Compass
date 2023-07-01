@@ -223,13 +223,13 @@ header ul {
     border-radius: 8px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 40px 70px 30px;
+    padding: 30px 70px 30px;
 }
 
 .comment-item-user {
     color: #3A4F9A;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: Inter;
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
@@ -240,8 +240,13 @@ header ul {
     color: #575757;
     font-size: 16px;
     font-family: Inter;
-    font-style: normal;
-    font-weight: 300;
+    font-style: italic;
+    font-weight: 200;
     line-height: 20px;
     letter-spacing: 1.3px;
+}
+
+.comment-container {
+    padding: 25px 0px;
+    border-bottom: 0.5px solid #575757
 }
