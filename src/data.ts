@@ -132,13 +132,9 @@ function createBlogPost(id: string, imageUrl: string, titleStr: string, paragrap
         link.innerText = "Expand...";
         link.href = "#";
 
-        header.dataset.id = id;
-        body.dataset.id = id;
-        link.dataset.id = id;
-        header.onclick = (event) => { loadFullPostPage((event.currentTarget! as HTMLElement).dataset.id); };
-        body.onclick = (event) => { loadFullPostPage((event.currentTarget! as HTMLElement).dataset.id); };
-        link.onclick = (event) => { loadFullPostPage((event.currentTarget! as HTMLElement).dataset.id); };
-
+        container.dataset.id = id;
+        container.onclick = (event) => { loadFullPostPage((event.currentTarget! as HTMLElement).dataset.id); };
+        
         container.appendChild(footer);
         footer.appendChild(link);
     }    

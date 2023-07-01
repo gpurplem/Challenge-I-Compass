@@ -109,12 +109,8 @@ function createBlogPost(id, imageUrl, titleStr, paragraphStr, page) {
         link.classList.add("post-link");
         link.innerText = "Expand...";
         link.href = "#";
-        header.dataset.id = id;
-        body.dataset.id = id;
-        link.dataset.id = id;
-        header.onclick = function (event) { loadFullPostPage(event.currentTarget.dataset.id); };
-        body.onclick = function (event) { loadFullPostPage(event.currentTarget.dataset.id); };
-        link.onclick = function (event) { loadFullPostPage(event.currentTarget.dataset.id); };
+        container.dataset.id = id;
+        container.onclick = function (event) { loadFullPostPage(event.currentTarget.dataset.id); };
         container.appendChild(footer);
         footer.appendChild(link);
     }
