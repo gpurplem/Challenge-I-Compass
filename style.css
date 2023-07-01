@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 nav {
@@ -31,7 +32,6 @@ header ul {
 .nav-text {
     color: #FFFFFF;
     font-size: 24px;
-    font-family: sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -52,7 +52,7 @@ header ul {
 }
 
 .posts-page-post-container {
-    width: 300px;
+    width: 28%;
     height: 346px;
     display: flex;
     flex-direction: column;
@@ -71,18 +71,17 @@ header ul {
 .posts-page-post-title {
     color: #3A4F9A;
     font-size: 20px;
-    font-family: sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 2px;
     cursor: pointer;
+    padding-bottom: 15px;
 }
 
 .posts-page-post-paragraph {
     color: #575757;
     font-size: 13px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 300;
     line-height: 20px;
@@ -98,7 +97,6 @@ header ul {
 .post-link {
     color: #3A4F9A;
     font-size: 13px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
@@ -142,7 +140,6 @@ header ul {
 .main-title {
     color: #3A4F9A;
     font-size: 36px;
-    font-family: sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
@@ -177,17 +174,16 @@ header ul {
 .full-post-page-post-title {
     color: #3A4F9A;
     font-size: 20px;
-    font-family: sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 2px;
+    padding-bottom: 25px;
 }
 
 .full-post-page-post-paragraph {
     color: #575757;
     font-size: 13px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 300;
     line-height: 20px;
@@ -229,7 +225,6 @@ header ul {
 .comment-item-user {
     color: #3A4F9A;
     font-size: 16px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
@@ -239,7 +234,6 @@ header ul {
 .comment-body {
     color: #575757;
     font-size: 16px;
-    font-family: Inter;
     font-style: italic;
     font-weight: 200;
     line-height: 20px;
