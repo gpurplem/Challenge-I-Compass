@@ -1,6 +1,4 @@
-# Challenge-I-Compass
-- Intern name: Gabriel Bocaletti Morato
-- First challenge for interns of REACT -AWS Cloud Context |Compass UOL - IFSP e UniNassau [05/06/2023]
+# Simple Blog
 
 # Application details
 The app shows a list of six post thumbnails on which user can click to see more details.
