@@ -164,7 +164,7 @@ body>.content-wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 1rem 0 0 0;
+    padding: 1rem 1rem 0;
     justify-content: space-around;
 }
 
