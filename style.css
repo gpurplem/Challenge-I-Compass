@@ -6,17 +6,10 @@
 }
 
 nav {
-    padding: 15px 125px;
-    align-items: flex-start;
+    padding: 1.5rem 0;
     background: #32325D;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    position: fixed;
-    top: 0;
+    box-shadow: 0px 9px 10px 2px rgba(0, 0, 0, 0.25);
     width: 100%;
-}
-
-header {
-    padding-bottom: 60px;
 }
 
 header li {
@@ -31,7 +24,7 @@ header ul {
 
 .nav-text {
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -43,16 +36,29 @@ header ul {
     flex-shrink: 0;
 }
 
+.content-wrapper {
+    display: flex;
+    margin: 0 2rem;
+    max-width: 1300px;
+}
+
+body>.content-wrapper {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #posts {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 70px;
-    justify-content: space-evenly;
-    row-gap: 50px;
+    row-gap: 2rem;
+    padding: 3rem 0 2rem 0;
+    justify-content: space-around;
 }
 
 .posts-page-post-container {
-    width: 28%;
+    width: 100%;
+    max-width: 350px;
     height: 346px;
     display: flex;
     flex-direction: column;
@@ -139,14 +145,15 @@ header ul {
 
 .main-title {
     color: #3A4F9A;
-    font-size: 36px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 20px;
     letter-spacing: 3.6px;
-    padding: 80px 0px 11px 125px;
     text-decoration: underline;
-    text-underline-offset: 16px;
+    text-underline-offset: 1rem;
+    text-align: center;
+    padding-top: 2rem;
+    text-wrap: nowrap;
 }
 
 .full-post-page-post-container {
@@ -243,4 +250,32 @@ header ul {
 .comment-container {
     padding: 25px 0px;
     border-bottom: 0.5px solid #575757
+}
+
+.error-message {
+    display: none;
+}
+
+@media screen and (max-width: 200px) {
+
+    header {
+        display: none;
+    }
+
+    .content-wrapper {
+        display: none;
+    }
+
+    .error-message {
+        display: block;
+        margin: 1rem 0rem;
+        font-size: 1.5rem;
+        color: red;
+        border: 5px solid red;
+        text-align: justify;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
