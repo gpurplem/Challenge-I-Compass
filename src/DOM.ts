@@ -30,7 +30,6 @@ namespace PostsApp {
 
         const main = document.getElementsByTagName("main")![0];
         const section = document.createElement("section")!;
-        const container = document.createElement("div")!;
         const post = document.createElement("div")!;
         const divCommentsContainer = document.createElement("div")!;
         const divComments = document.createElement("div")!;
@@ -40,8 +39,10 @@ namespace PostsApp {
         section.id = "full-post-page";
         post.id = "full-post";
         backIcon.src = "./assets/ArrowIcon.svg";
+        divCommentsContainer.id = "divCommentsContainer";
+        divComments.id = "divComments";
+        backBtnDiv.id = "backBtnDiv";
 
-        container.className = "";
         post.className = "";
         backBtnDiv.className = "back-btn";
         divCommentsContainer.className = "comments-container";
@@ -50,12 +51,11 @@ namespace PostsApp {
         backBtnDiv.onclick = reloadPostsPage;
 
         main.appendChild(section);
-        section.appendChild(container);
         backBtnDiv.appendChild(backIcon);
-        container.appendChild(backBtnDiv);
-        container.appendChild(post);
         divCommentsContainer.appendChild(divComments);
-        container.appendChild(divCommentsContainer);
+        section.appendChild(backBtnDiv);
+        section.appendChild(post);
+        section.appendChild(divCommentsContainer);
 
         const idNumber = parseInt(postId!);
 
@@ -95,6 +95,8 @@ namespace PostsApp {
         image.src = "./assets/" + imageUrl;
         title.innerText = titleStr;
         paragraph.textContent = paragraphStr;
+
+        header.style.backgroundImage = `url("./assets/${imageUrl}")`;
 
         header.appendChild(image);
         body.appendChild(title);
